@@ -93,17 +93,17 @@ function Timer(){
 	//time.setTime();
 }
 
-function stopClock() {
-	let time = new Date();
-    //если переменная timer содержит истину по правилу лжи (т.е. таймер запущен)
-    if(time) {
-      //прекращаем работу таймера
-      window.clearInterval(time);
-      //присваиваем переменной timer значение null, чтобы таймер опять можно было запустить
-      time=null;
-      //Выводим пустую строку в элемент с id="clock"
-      document.getElementById("clock").innerHTML="";
-    }
-  }
+// function stopClock() {
+// 	let time = new Date();
+//     //если переменная timer содержит истину по правилу лжи (т.е. таймер запущен)
+//     if(time) {
+//       //прекращаем работу таймера
+//       window.clearInterval(time);
+//       //присваиваем переменной timer значение null, чтобы таймер опять можно было запустить
+//       time=null;
+//       //Выводим пустую строку в элемент с id="clock"
+//       document.getElementById("clock").innerHTML="";
+//     }
+//   }
 
 setInterval(Timer, 1000);
