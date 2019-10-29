@@ -107,5 +107,3 @@ function stopClock() {
   }
 
 setInterval(Timer, 1000);
-
-stopClock();
